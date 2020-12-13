@@ -1,0 +1,26 @@
+{
+  "name": "maevanguyenanhphuong_3_11122020",
+  "version": "1.0.0",
+  "description": "Integrated a mockup using HTML, SCSS and animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/assets/sass/main.scss:./src/assets/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maevanapcontact/MaevaNguyenAnhPhuong_3_11122020.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Maeva NGUYEN ANH PHUONG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maevanapcontact/MaevaNguyenAnhPhuong_3_11122020/issues"
+  },
+  "homepage": "https://github.com/maevanapcontact/MaevaNguyenAnhPhuong_3_11122020#readme",
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}
