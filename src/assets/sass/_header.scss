@@ -1,8 +1,9 @@
 .main-header {
+  position: relative;
   padding: 22px 0 12px 0;
   display: flex;
   justify-content: center;
-  box-shadow: 0 5px 8px #ddd;
+  box-shadow: 0 5px 8px #ccc;
   
   &__return {
     &--hidden {

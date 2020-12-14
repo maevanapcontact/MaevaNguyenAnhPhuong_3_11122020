@@ -7,6 +7,8 @@ TABLE OF CONTENTS
 /* ------------------------- */
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,10 +18,11 @@ body {
 /* HEADER */
 /* ------------------------- */
 .main-header {
+  position: relative;
   padding: 22px 0 12px 0;
   display: flex;
   justify-content: center;
-  box-shadow: 0 5px 8px #ddd;
+  box-shadow: 0 5px 8px #ccc;
 }
 .main-header__return--hidden {
   display: none;
@@ -27,6 +30,46 @@ body {
 .main-header img {
   height: 25px;
   width: auto;
+}
+
+/* BANNER */
+/* ------------------------- */
+.banner__location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  padding: 15px 0;
+  color: #353535;
+  font-weight: bold;
+}
+.banner__location i {
+  margin: 0 15px 0 0;
+}
+.banner__call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background: #f6f6f6;
+}
+.banner__call-to-action h2 {
+  font-size: 1.6em;
+}
+.banner__call-to-action span {
+  margin: 15px 0;
+  font-size: 1.06em;
+}
+.banner__explore-btn {
+  margin: 15px 0;
+  font-size: 1.1em;
+  padding: 17px 22px;
+  border-radius: 60px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  color: #fff;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
