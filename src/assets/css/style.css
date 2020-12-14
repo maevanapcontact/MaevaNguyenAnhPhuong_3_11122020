@@ -6,6 +6,7 @@ TABLE OF CONTENTS
 /* GENERAL */
 /* ------------------------- */
 * {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -13,6 +14,11 @@ TABLE OF CONTENTS
 
 body {
   margin: auto;
+}
+
+button {
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
 }
 
 /* HEADER */
@@ -65,11 +71,60 @@ body {
   font-size: 1.1em;
   padding: 17px 22px;
   border-radius: 60px;
-  border: none;
-  box-shadow: 0 5px 10px #ccc;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   color: #fff;
   font-weight: 500;
+}
+
+/* FUNCTIONING */
+/* ------------------------- */
+.functioning {
+  padding: 50px 20px;
+  max-width: 400px;
+  margin: auto;
+}
+.functioning h2 {
+  margin: 0 0 30px 0;
+}
+.functioning i {
+  color: #7e7e7e;
+  margin: 0 25px 0 35px;
+}
+.functioning__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.functioning__step {
+  height: 75px;
+  width: 320px;
+  background: #f6f6f6;
+  border-radius: 20px;
+  margin: 0 0 25px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+}
+.functioning__step:hover {
+  cursor: pointer;
+  background: #f5edff;
+}
+.functioning__step:hover i {
+  color: #9356dc;
+}
+.functioning__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  position: absolute;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */
