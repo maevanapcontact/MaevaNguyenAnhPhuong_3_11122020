@@ -1,3 +1,10 @@
+/* -------------------------
+TABLE OF CONTENTS
+------------------------- */
+/* VARIABLES */
+/* ------------------------- */
+/* GENERAL */
+/* ------------------------- */
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -6,19 +13,20 @@ body {
   margin: auto;
 }
 
+/* HEADER */
+/* ------------------------- */
 .main-header {
   padding: 22px 0 12px 0;
   display: flex;
   justify-content: center;
   box-shadow: 0 5px 8px #ddd;
 }
+.main-header__return--hidden {
+  display: none;
+}
 .main-header img {
   height: 25px;
   width: auto;
-}
-
-.main-header__return--hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

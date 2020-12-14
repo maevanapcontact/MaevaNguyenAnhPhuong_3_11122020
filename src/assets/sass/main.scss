@@ -1,4 +1,15 @@
-@import './utils/variables';
-@import './base/base';
-@import './layout/header';
-@import './pages/homepage';
+/* -------------------------
+TABLE OF CONTENTS
+------------------------- */
+
+/* VARIABLES */
+/* ------------------------- */
+@import './variables';
+
+/* GENERAL */
+/* ------------------------- */
+@import './general';
+
+/* HEADER */
+/* ------------------------- */
+@import './header';
