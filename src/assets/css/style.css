@@ -127,4 +127,65 @@ button {
   font-size: 0.9em;
 }
 
+/* RESTAURANTS */
+/* ------------------------- */
+.restaurants {
+  background: #f6f6f6;
+  padding: 60px 10px;
+}
+.restaurants h2 {
+  margin: 0 0 25px 20px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1460px;
+  margin: auto;
+}
+.restaurants__card {
+  background: #fff;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px #ccc;
+  margin: 0 10px 20px 10px;
+}
+.restaurants__card--new {
+  background: #99e2d0;
+  color: #008766;
+  padding: 10px 15px;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px #666;
+}
+.restaurants__card--hidden {
+  display: none;
+}
+.restaurants img {
+  width: 100%;
+  max-width: 335px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__infos {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+.restaurants__infos h3 {
+  margin: 0 0 5px 0;
+}
+.restaurants__infos i {
+  font-size: 1.8em;
+  margin: 0 10px;
+}
+.restaurants__infos i:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
