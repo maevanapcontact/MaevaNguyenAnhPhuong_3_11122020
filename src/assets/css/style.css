@@ -21,7 +21,16 @@ button {
   box-shadow: 0 5px 10px #ccc;
 }
 
-/* HEADER */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* MAIN HEADER */
 /* ------------------------- */
 .main-header {
   position: relative;
@@ -186,6 +195,31 @@ button {
 }
 .restaurants__infos i:hover {
   cursor: pointer;
+}
+
+/* MAIN FOOTER */
+/* ------------------------- */
+.main-footer {
+  background: #353535;
+  padding: 25px;
+}
+.main-footer img {
+  width: 100px;
+  height: auto;
+  margin: 0 0 20px 0;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(262deg) brightness(104%) contrast(104%);
+}
+.main-footer li {
+  margin: 0 0 10px 0;
+}
+.main-footer a {
+  color: #fff;
+}
+.main-footer a:hover {
+  color: #ff79da;
+}
+.main-footer i {
+  margin: 0 10px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

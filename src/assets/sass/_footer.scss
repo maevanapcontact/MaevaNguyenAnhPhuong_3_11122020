@@ -1,0 +1,27 @@
+.main-footer {
+  background: #353535;
+  padding: 25px;
+
+  img {
+    width: 100px;
+    height: auto;
+    margin: 0 0 20px 0;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(262deg) brightness(104%) contrast(104%);
+  }
+
+  li {
+    margin: 0 0 10px 0;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  i {
+    margin: 0 10px 0 0;
+  }
+}
