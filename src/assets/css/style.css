@@ -34,10 +34,14 @@ a {
 /* ------------------------- */
 .main-header {
   position: relative;
-  padding: 22px 0 12px 0;
-  display: flex;
-  justify-content: center;
+  padding: 22px 20px 12px 20px;
   box-shadow: 0 5px 8px #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header__return {
+  font-size: 1.2em;
 }
 .main-header__return--hidden {
   display: none;
@@ -45,6 +49,7 @@ a {
 .main-header img {
   height: 25px;
   width: auto;
+  margin: auto;
 }
 
 /* BANNER */
