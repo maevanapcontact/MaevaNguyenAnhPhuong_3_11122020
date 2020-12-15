@@ -210,6 +210,18 @@ a {
 .menu {
   padding: 220px 0 0 0;
 }
+.menu header,
+.menu section, .menu__button {
+  max-width: 800px;
+  margin: auto;
+}
+@media (min-width: 640px) {
+  .menu header,
+.menu section, .menu__button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .menu__header {
   background: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -273,6 +285,11 @@ a {
   padding: 13px 20px;
   font-weight: 600;
   font-size: 1.2em;
+}
+.menu__button {
+  background: #f6f6f6;
+  padding: 50px 0 80px 0;
+  text-align: center;
 }
 
 /* MAIN FOOTER */

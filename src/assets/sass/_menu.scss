@@ -10,6 +10,18 @@
 .menu {
   padding: 220px 0 0 0;
 
+  header,
+  section,
+  &__button {
+    max-width: 800px;
+    margin: auto;
+
+    @media (min-width: 640px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
   &__header {
     background: $section-background-color;
     border-radius: 40px 40px 0 0;
@@ -87,5 +99,11 @@
     padding: 13px 20px;
     font-weight: 600;
     font-size: 1.2em;
+  }
+
+  &__button {
+    background: $section-background-color;
+    padding: 50px 0 80px 0;
+    text-align: center;
   }
 }
