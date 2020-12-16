@@ -21,6 +21,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 10px #ccc;
     margin: 0 10px 20px 10px;
+    transition: box-shadow 0.2s;
 
     &--new {
       background: $tertiary-color;
@@ -37,6 +38,10 @@
 
     &--hidden {
       display: none;
+    }
+
+    &:hover {
+      box-shadow: 0 5px 10px #999;
     }
   }
 

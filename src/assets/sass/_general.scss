@@ -12,6 +12,11 @@ body {
 button {
   border: none;
   box-shadow: 0 5px 10px #ccc;
+
+  &:hover {
+    box-shadow: 0 5px 10px #999;
+    cursor: pointer;
+  }
 }
 
 ul {

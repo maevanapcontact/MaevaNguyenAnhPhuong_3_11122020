@@ -5,4 +5,9 @@
   background: linear-gradient($secondary-color 0%, $primary-color 100%);
   color: #fff;
   font-weight: 500;
+  transition: filter 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    filter: brightness(115%);
+  }
 }

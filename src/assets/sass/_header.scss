@@ -1,5 +1,4 @@
 .main-header {
-  position: relative;
   padding: 15px 20px 5px 20px;
   box-shadow: 0 5px 8px #ccc;
   display: flex;
@@ -8,10 +7,19 @@
   
   &__return {
     font-size: 1.2em;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $secondary-color;
+    }
     
     &--hidden {
       display: none;
     }
+  }
+
+  &--on-top {
+    position: relative;
   }
 
   h1 {

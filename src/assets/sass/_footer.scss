@@ -16,6 +16,7 @@
 
   a {
     color: #fff;
+    transition: color 0.2s;
 
     &:hover {
       color: $secondary-color;

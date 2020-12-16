@@ -28,10 +28,11 @@
     font-weight: bold;
     position: relative;
     text-align: left;
+    transition: background-color 0.2s, box-shadow 0.2s;
 
     &:hover {
       cursor: pointer;
-      background: #f5edff;
+      background-color: #f5edff;
 
       i {
         color: $primary-color;
