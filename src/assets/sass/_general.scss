@@ -16,7 +16,8 @@ button {
   border: none;
   box-shadow: $shadow-initial;
 
-  &:hover {
+  &:hover,
+  &:active {
     box-shadow: 0 5px 10px #999;
     cursor: pointer;
   }

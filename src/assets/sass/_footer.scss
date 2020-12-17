@@ -22,7 +22,8 @@
     color: #fff;
     transition: color 0.2s;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: $secondary-color;
     }
   }

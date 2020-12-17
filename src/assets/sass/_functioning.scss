@@ -28,9 +28,10 @@
     font-weight: bold;
     position: relative;
     text-align: left;
-    transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.4s, box-shadow 0.4s;
 
-    &:hover {
+    &:hover,
+    &:active {
       cursor: pointer;
       background-color: #f5edff;
 

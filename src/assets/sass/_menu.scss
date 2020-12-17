@@ -39,7 +39,8 @@
       font-size: 1.6em;
       margin: 0 18px 0 0;
 
-      &:hover {
+      &:hover,
+      &:active {
         cursor: pointer;
       }
     }
@@ -56,6 +57,7 @@
     font-family: $font-title;
     font-size: 1.8em;
     font-weight: 400;
+    margin: 0 10px 0 0;
   }
 
   h3 {
@@ -83,20 +85,24 @@
     overflow: hidden;
     transition: padding 0.4s;
 
-    &:hover {
+    &:hover,
+    &:active {
       cursor: pointer;
       padding: 15px 130px 15px 15px;
     }
 
-    &:hover .menu__check {
+    &:hover .menu__check,
+    &:active .menu__check {
       right: 0;
     }
 
-    &:hover .menu__price {
+    &:hover .menu__price,
+    &:active .menu__price {
       right: 90px;
     }
 
-    &:hover i {
+    &:hover i,
+    &:active i {
       right: 0;
       animation: check-icon 0.4s;
     }

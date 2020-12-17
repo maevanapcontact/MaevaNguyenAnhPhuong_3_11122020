@@ -28,7 +28,7 @@
     border-radius: 15px;
     box-shadow: $shadow-initial;
     margin: 0 10px 20px 10px;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.4s;
 
     &--new {
       background: $tertiary-color;
@@ -47,7 +47,8 @@
       display: none;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       box-shadow: $shadow-hover;
     }
   }
@@ -68,22 +69,6 @@
 
     h3 {
       margin: 0 0 5px 0;
-    }
-
-    i {
-      font-size: 1.8em;
-      margin: 0 10px;
-      color: #fff;
-      height: auto;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #000;
-      transition: color 0.4s, -webkit-text-stroke-color 0.4s;
-
-      &:hover {
-        cursor: pointer;
-        color: $secondary-color;
-        -webkit-text-stroke-color: $secondary-color;
-      }
     }
   }
 }

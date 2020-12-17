@@ -1,5 +1,18 @@
 /* -------------------------
 TABLE OF CONTENTS
+
+1. VARIABLES
+2. MIXINS
+3. KEYFRAMES
+4. GENERAL
+5. BUTTONS
+6. LOADING
+7. MAIN HEADER
+8. BANNER
+9. FUNCTIONING
+10. RESTAURANTS
+11. MENU
+12. MAIN FOOTER
 ------------------------- */
 
 /* VARIABLES */
@@ -10,9 +23,17 @@ TABLE OF CONTENTS
 /* ------------------------- */
 @import './mixins';
 
+/* KEYFRAMES */
+/* ------------------------- */
+@import './keyframes';
+
 /* GENERAL */
 /* ------------------------- */
 @import './general';
+
+/* BUTTONS */
+/* ------------------------- */
+@import './buttons';
 
 /* LOADING */
 /* ------------------------- */
@@ -41,12 +62,4 @@ TABLE OF CONTENTS
 /* MAIN FOOTER */
 /* ------------------------- */
 @import './footer';
-
-/* BUTTONS */
-/* ------------------------- */
-@import './buttons';
-
-/* KEYFRAMES */
-/* ------------------------- */
-@import './keyframes';
 

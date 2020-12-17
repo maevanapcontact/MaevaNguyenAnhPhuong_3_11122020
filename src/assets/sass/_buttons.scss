@@ -5,9 +5,26 @@
   background: linear-gradient($secondary-color 0%, $primary-color 100%);
   color: #fff;
   font-weight: 500;
-  transition: filter 0.2s, box-shadow 0.2s;
+  transition: filter 0.4s, box-shadow 0.4s;
 
   &:hover {
     filter: brightness(115%);
+  }
+}
+
+.like-btn {
+  font-size: 1.8em;
+  margin: 0 10px;
+  color: #fff;
+  height: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  transition: color 0.4s, -webkit-text-stroke-color 0.4s;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    color: $secondary-color;
+    -webkit-text-stroke-color: $secondary-color;
   }
 }

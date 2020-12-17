@@ -11,7 +11,8 @@
     font-size: 1.2em;
     transition: color 0.2s;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: $secondary-color;
     }
   }
