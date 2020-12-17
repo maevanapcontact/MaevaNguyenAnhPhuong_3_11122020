@@ -242,17 +242,30 @@ a {
 .restaurants__infos {
   display: flex;
   justify-content: space-between;
-  padding: 20px 15px;
+  align-items: flex-start;
+  padding: 15px 15px 20px 15px;
 }
 .restaurants__infos h3 {
   margin: 0 0 5px 0;
 }
+.restaurants__infos button {
+  box-shadow: none;
+  background: none;
+  margin: 5px 0 0 0;
+}
 .restaurants__infos i {
   font-size: 1.8em;
   margin: 0 10px;
+  color: #fff;
+  height: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  transition: color 0.4s, -webkit-text-stroke-color 0.4s;
 }
 .restaurants__infos i:hover {
   cursor: pointer;
+  color: #ff79da;
+  -webkit-text-stroke-color: #ff79da;
 }
 
 /* MENU */
