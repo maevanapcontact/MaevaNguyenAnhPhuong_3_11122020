@@ -1,0 +1,41 @@
+.loading-spinner {
+  z-index: 10;
+  height: 0;
+  width: 0;
+  position: absolute;
+  background-color: $primary-color;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: loading-spinner;
+  animation-duration: 3s;
+
+  &__ball {
+    z-index: 11;
+    background: $section-background-color;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 15px;
+    transform: scale(0);
+
+    animation-name: balls;
+    animation-duration: 1.2s;
+    animation-iteration-count: 2;
+
+    &--left {
+      animation-delay: 0.2s;
+    }
+
+    &--center {
+      animation-delay: 0.4s;
+    }
+
+    &--right {
+      animation-delay: 0.6s;
+    }
+  }
+}
