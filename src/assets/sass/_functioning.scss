@@ -1,6 +1,6 @@
 .functioning {
   padding: 50px 20px;
-  max-width: 400px;
+  max-width: 1460px;
   margin: auto;
 
   h2 {
@@ -13,14 +13,14 @@
   }
 
   &__steps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include layout-column-center;
   }
 
   &__step {
     height: 75px;
-    width: 320px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 600px;
     background: $section-background-color;
     border-radius: 20px;
     margin: 0 0 25px 0;
@@ -41,9 +41,7 @@
   }
 
   &__number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include layout-all-center;
 
     background: $primary-color;
     position: absolute;

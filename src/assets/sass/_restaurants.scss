@@ -4,6 +4,11 @@
 
   h2 {
     margin: 0 0 25px 20px;
+    max-width: 1460px;
+
+    @media (min-width: 1460px) {
+      margin: 0 auto 25px auto;
+    }
   }
 
   &__cards {
@@ -16,10 +21,12 @@
   }
 
   &__card {
+    width: 100%;
+    max-width: 335px;
     background: #fff;
     position: relative;
     border-radius: 15px;
-    box-shadow: 0 5px 10px #ccc;
+    box-shadow: $shadow-initial;
     margin: 0 10px 20px 10px;
     transition: box-shadow 0.2s;
 
@@ -41,13 +48,12 @@
     }
 
     &:hover {
-      box-shadow: 0 5px 10px #999;
+      box-shadow: $shadow-hover;
     }
   }
 
   img {
     width: 100%;
-    max-width: 335px;
     height: 175px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -62,12 +68,6 @@
 
     h3 {
       margin: 0 0 5px 0;
-    }
-
-    button {
-      box-shadow: none;
-      background: none;
-      margin: 5px 0 0 0;
     }
 
     i {

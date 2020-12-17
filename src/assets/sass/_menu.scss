@@ -2,34 +2,38 @@
   width: 100%;
   height: 100%;
   background-color: $section-background-color;
-  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .menu {
-  padding: 220px 0 0 0;
-
   header,
   section,
   &__button {
-    max-width: 800px;
     margin: auto;
-
-    @media (min-width: 640px) {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
   }
 
   &__header {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    @include layout-spaced-center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
     background: $section-background-color;
     border-radius: 40px 40px 0 0;
     padding: 30px 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     i {
       font-size: 1.6em;
@@ -49,7 +53,7 @@
   }
 
   h2 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $font-title;
     font-size: 1.8em;
     font-weight: 400;
   }
@@ -61,11 +65,16 @@
   }
 
   &__item {
-    background: $section-background-color;
     padding: 0 10px 30px 10px;
+    max-width: 800px;
+
+    @media (min-width: 800px) {
+      padding: 0 30px 30px 30px;
+    }
   }
 
   &__entry {
+    box-shadow: $shadow-initial;
     border: none;
     width: 100%;
     background: #fff;
@@ -79,6 +88,7 @@
 
     &:hover {
       cursor: pointer;
+      box-shadow: $shadow-hover;
     }
 
     &:hover .menu__check {
@@ -86,8 +96,7 @@
     }
 
     &:hover .menu__check-icon {
-      animation-name: menu__check-icon;
-      animation-duration: 0.4s;
+      animation: check-icon 0.4s;
     }
   }
 
@@ -99,12 +108,12 @@
     text-overflow: ellipsis;
 
     h4 {
-      font-size: 1.4em;
+      font-size: 1.2em;
       margin: 0 0 3px 0;
     }
 
     span {
-      font-size: 1.15em;
+      font-size: 1em;
     }
   }
 
@@ -126,9 +135,7 @@
   }
 
   &__check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include layout-all-center;
 
     background: $tertiary-color;
     color: #fff;

@@ -1,4 +1,21 @@
+/* COLORS */
+/* ------------------------- */
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $section-background-color: #f6f6f6;
+
+/* SHADOWS */
+/* ------------------------- */
+$shadow-initial: 0 5px 10px #ccc;
+$shadow-hover: 0 5px 10px #999;
+
+/* FONTS */
+/* ------------------------- */
+$font-title: 'Shrikhand', sans-serif;
+$font-content: 'Roboto', sans-serif;
+
+/* ANIMATIONS */
+/* ------------------------- */
+$num-balls: 3;
+$anim-delay: 0.2s;

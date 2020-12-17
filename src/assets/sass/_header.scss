@@ -1,9 +1,11 @@
 .main-header {
+  @include layout-spaced-center;
   padding: 15px 20px 5px 20px;
   box-shadow: 0 5px 8px #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  @media (min-width: 1900px) {
+    padding: 15px 20% 5px 20%;
+  }
   
   &__return {
     font-size: 1.2em;
@@ -12,10 +14,6 @@
     &:hover {
       color: $secondary-color;
     }
-    
-    &--hidden {
-      display: none;
-    }
   }
 
   &--on-top {
@@ -23,7 +21,7 @@
   }
 
   h1 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $font-title;
     font-size: 2em;
     margin: auto;
     font-weight: 500;

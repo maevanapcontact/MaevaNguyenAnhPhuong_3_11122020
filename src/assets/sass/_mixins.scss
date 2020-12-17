@@ -1,0 +1,22 @@
+@mixin layout-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin layout-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin layout-spaced-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin layout-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
